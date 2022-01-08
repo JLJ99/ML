@@ -24,3 +24,4 @@ MC2 <-4
 logrank.test <- survdiff(Surv(df$observation,df$censoring)~df$group)
 logrank.test$chisq
 MC3 <- 2
+
