@@ -24,7 +24,7 @@ plot(fit.Time, xlab = "Seconds", ylab = "Probability of Still Being on Hold", co
 legend("topright", c("Morning", "Afternoon", "Evening"), col = c(5, 2, 4), lty = 1)
 
 MC1 <- 1
-# log-rank test
+#log-rank test
 log.center <- survdiff(Surv(y,failed)~Center, data = queuing$data)
 
 log.time <- survdiff(Surv(y,failed)~Time, data = queuing$data)
